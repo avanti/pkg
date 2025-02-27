@@ -11,8 +11,6 @@ storefront/styles/css
 public/
 src\arquivos\sass\lib\_sprite.scss
 
-# gulp
-dist/
 .temp/
 # node
 
