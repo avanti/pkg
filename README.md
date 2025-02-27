@@ -1,36 +1,52 @@
-# Test Packages
+# Packages
 
-Esse é um repositório que contem vários pacotes uteis para o desenvolvimento como checkout por exemplo.
+Este repositório contém vários pacotes úteis para o desenvolvimento, como o pacote de checkout, por exemplo.
 
 ## Instalação
 
 ### Opção 1: Usando a URL do GitHub
 
+Você pode instalar o pacote diretamente do GitHub usando o seguinte comando:
+
+**Usando npm:**
+```bash
 npm install git+https://github.com/avanti/pkg.git
+```
 
-ou
-
+**Usando yarn:**
+```bash
 yarn add git+https://github.com/avanti/pkg.git
+```
 
-ou com SSH:
+**Ou via SSH:**
+```bash
+npm install git+ssh://git@github.com/avanti/pkg.git
+```
 
-npm install git+ssh://git@github.com:avanti/pkg.git
+```bash
+yarn add git+ssh://git@github.com/avanti/pkg.git
+```
 
-yarn add git+ssh://git@github.com:avanti/pkg.git
+### Opção 2: Formato Abreviado
 
-### Opção 2: Formato abreviado
+Você também pode instalar o pacote usando um formato mais curto:
 
+**Usando npm:**
+```bash
 npm install avanti/pkg
+```
 
-ou 
-
+**Usando yarn:**
+```bash
 yarn add avanti/pkg
+```
 
-## 4. Referência no [package.json](vscode-file://vscode-app/usr/share/code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html) do projeto que usa o pacote
+## Referência no `package.json` do Projeto
 
-Após a instalação, o [package.json](vscode-file://vscode-app/usr/share/code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html) do projeto que consome o pacote ficará assim:
+Após a instalação, o seu `package.json` ficará assim:
 
+```json
 "dependencies": {
-
- "@avanti_suporte_jh1/pkg": "avanti/pkg"
+  "@avanti_suporte/pkg": "avanti/pkg"
 }
+```

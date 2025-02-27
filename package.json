@@ -1,6 +1,6 @@
 {
-  "name": "@avanti_suporte_jh1/pkg",
-  "version": "1.0.1",
+  "name": "@avanti_suporte/pkg",
+  "version": "1.0.2",
   "description": "Pacotes utilitários da aplicação",
   "main": "./dist/lib/index.js",
   "types": "./dist/lib/index.d.ts",
