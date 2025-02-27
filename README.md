@@ -1,62 +1,36 @@
 # Test Packages
 
-Esse é um repositório que contem vários pacotes uteis para o desenvolvimento.
+Esse é um repositório que contem vários pacotes uteis para o desenvolvimento como checkout por exemplo.
 
 ## Instalação
 
-``` npm install @avanti_suporte_jh1/pkg```
+### Opção 1: Usando a URL do GitHub
 
-## Pacotes
+npm install git+https://github.com/avanti/pkg.git
 
-- [Container](src/packages/core/doc)
-- [StateManager](src/packages/core/doc)
+ou
 
+yarn add git+https://github.com/avanti/pkg.git
 
-# 🛠️ Desenvolvimento
+ou com SSH:
 
-### Pré-requisitos
+npm install git+ssh://git@github.com:avanti/pkg.git
 
-- Node.js (versão 14 ou superior)
-- npm ou yarn
+yarn add git+ssh://git@github.com:avanti/pkg.git
 
-### Configuração Inicial
+### Opção 2: Formato abreviado
 
-1. Clone o repositório
-```bash
-git clone <repository-url>
-```
+npm install avanti/pkg
 
-2. Instale as dependências
-```bash
-npm install
-```
+ou 
 
-3. Build do projeto
-```bash
-npm run build
-```
+yarn add avanti/pkg
 
-### Scripts Disponíveis
+## 4. Referência no [package.json](vscode-file://vscode-app/usr/share/code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html) do projeto que usa o pacote
 
-- `npm run build` - Compila o projeto TypeScript
-- `npm test` - Executa os testes
-- `npm run lint` - Verifica a formatação do código
+Após a instalação, o [package.json](vscode-file://vscode-app/usr/share/code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html) do projeto que consome o pacote ficará assim:
 
-## 📝 Publicação
+"dependencies": {
 
-1. Login no NPM
-```bash
-npm login
-```
-
-2. Atualize a versão do pacote
-```bash
-npm version patch  # Para bugfix (1.0.0 -> 1.0.1)
-npm version minor  # Para novas features (1.0.0 -> 1.1.0)
-npm version major  # Para breaking changes (1.0.0 -> 2.0.0)
-```
-
-3. Publique o pacote
-```bash
-npm publish --access public
-```
+ "@avanti_suporte_jh1/pkg": "avanti/pkg"
+}
